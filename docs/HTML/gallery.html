@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body> 
+    <section id="LOGO">
+    <img src="IMG/MD1.PNG" >
+</section>
+<nav class="button-container">
+    <section id="home">
+        <h1 >MDANIELS ART</h1>
+    </section>
+ <ul>
+    <button><li><a href="../home.html">HOME</a></li></button>
+    <button><li><a href="about.html">ABOUT</a></li></button>
+    <button><li><a href="gallery.html">ART GALLERY</a></li></button>
+    <button><li><a href="socmed.html">SOCMED</a></li></button>
+</ul>
+</nav>
+</body>   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2E0707; /* Matches your website's theme */
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 300px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+     
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="../IMG/1.png" alt="Artwork 1">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/2.png" alt="Artwork 2">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/ayra.png" alt="Artwork 4">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/cha.png" alt="Artwork 5">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/aj.png" alt="Artwork 6">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/7.png" alt="Artwork 7">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/8.png" alt="Artwork 8">
+        </div>
+        <div class="gallery-item">
+            <img src="../IMG/11.png" alt="Artwork 11">
+        </div>
+       
+    </div>
+</body>
+</html>

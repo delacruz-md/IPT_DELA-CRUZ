@@ -1,0 +1,262 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the navigation bar */
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    transition:color 0.25s ;
+}
+
+/* Style for the navigation list */
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Style for buttons */
+button {
+    background-color: #ffa600;
+    color: #fff;
+    border: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+    
+button:hover {
+    background-color: #5a2222;
+    box-shadow: 0 0 5px 5px rgb(237, 130, 130);
+}
+
+
+
+/* Style for links */
+button a {
+    font-family: Impact, 'Arial ', sans-serif;
+    color: #ffffff;
+    letter-spacing: 3.5px;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px rgb(18, 0, 0),  /* Soft black shadow */
+    0 0 25px rgb(241, 7, 7);  /* Glowing red shadow */
+
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.button-container{
+    background: #881b1b;
+    padding: 25px;
+    
+    }
+    
+
+body {
+    font-family: Arial, sans-serif;
+    position:relative;
+    color: #ffffff;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #370202 ;
+   
+}
+
+
+
+
+image {
+    padding: 50px;
+}
+
+#home h1 {
+    font-family: 'Arial', sans-serif;  /* Font style */
+    font-size: 40px;                   /* Font size */
+    color: #ffffff;                       /* Dark text color */
+    letter-spacing:9.5px;               /* Spacing between letters */
+    margin: 0;
+    position: absolute;   
+    top:30px;
+    left: 130px;  
+        /* Text shadow effect */
+        text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+        0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
+
+/* Style for the div containing the image */
+.profile-pic {
+    text-align: left;  /* Aligns the content (image) to the right */
+    padding: 50px;      /* Adds some padding around the image */
+}
+
+/* Style for the image */
+.profile-pic img {
+    width:460px;  /* Ensures the image width is 200px */
+    position: absolute;
+    right: 995px;
+    filter: drop-shadow(0px 0px 12px rgb(255, 196, 0));
+
+}
+
+
+
+#Gallery img{
+    margin-right: 20px;
+}
+.img1{
+position: absolute;
+top:550px;
+right: 200px;
+}
+.img2{
+    position: absolute;
+    top:340px;
+    right: 100px;
+    }
+    .img3{
+        position: absolute;
+        top:120px;
+        right: 50px;
+        }
+/* Style for the gallery container */
+#Gallery {
+    display: flex;         /* Aligns images horizontally */
+    padding: 5px;         /* Adds some padding around the gallery */
+}
+
+/* General image styling */
+#Gallery img {
+    width: 130px;          /* Sets the default width */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth animation for scaling */
+    cursor: pointer;       /* Changes cursor to pointer to indicate interactivity */
+}
+
+/* Hover effect to expand the image */
+#Gallery img:hover {
+    transform: scale(1.2);  /* Expands the image to 150% of its original size */
+ box-shadow: 0 0px 10px 10px rgb(255, 162, 0);
+}
+
+.LABEL h3{
+    font-size: 40px;
+    position: absolute;
+    top:110px;
+    left:430px;
+    letter-spacing: 8px;
+    
+}
+.LABEL h5{
+    font-size: 20px;
+    position: absolute;
+    top:160px;
+    left:435px;
+    
+}
+
+#LOGO{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    padding: 5px;
+    border-radius: 100px;
+    background:transparent;
+}
+/* Blinking effect for the image */
+#LOGO img {
+    width: 95px;  /* Image size */
+
+    /* Define animation */
+    animation: blink 5s infinite;  /* Apply blink animation with a 1-second duration, repeating infinitely */
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;  /* Image is fully visible at the start and end */
+    }
+    50% {
+        opacity: 0;  /* Image is invisible in the middle of the animation */
+    }
+}
+#info{
+    font-family:  'Arial ', sans-serif;
+    position: absolute;
+    background-color: #f03a3a24;
+    background-size: auto;
+    padding: 0px 10px;
+    word-spacing: 50%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 18px;
+    top: 250px;
+    left: 450px;
+    right:355px;
+    text-shadow: 5px 5px 8px rgb(0, 0, 0),  /* Soft black shadow */
+    0 0 25px rgb(1, 0, 0);  /* Glowing red shadow */
+
+}
+
+footer {
+    background-color: #881b1b;
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+    position:relative;
+    top: 560px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left h3 {
+    margin-bottom: 10px;
+  }
+  
+  
+  .footer-right .social-icons a {
+    margin: 0 5px;
+  }
+  
+  .footer-right .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+  .log{
+    position: absolute;
+    top:550px;
+    left:440px;
+  }
